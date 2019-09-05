@@ -1,25 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+L'application n'est pas entièrement fonctionnelle. Nous avons pris pas mal de retard car notre organisation n'était pas au point les premiers jours. Avec un peu plus de temps on aurait pu finir, mes les dernières mises au point se sont faites hier soir. En espérant que tu seras compréhensif ;)
 
-Things you may want to cover:
+Pour voir en local le rendu de l'application fais:
 
-* Ruby version
+- bundle install
 
-* System dependencies
+- rails db:create
 
-* Configuration
+- rails db:migrate
 
-* Database creation
+- rails s
 
-* Database initialization
+- copie/colle http://localhost:3000/ dans ton naviguateur
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+Pour voir le déploiement sur heroku qui a fonctionné:
 
-* Deployment instructions
-
-* ...
-# projet-final-s9
+- copie/colle https://whispering-harbor-77210.herokuapp.com/ dans ton naviguateur.

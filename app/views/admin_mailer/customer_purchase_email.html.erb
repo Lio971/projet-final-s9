@@ -1,0 +1,13 @@
+<h1>Yo !</h1>
+
+<p>On vient d'avoir un-boulet qu a acheté des photos de chatons sur le site alors que c'est gratos sur le net.<br>
+Le client qui a l'adresse <%= user.email%> a payé pour ces photos :</p>
+
+<ul>
+      <% @items.each do |item| %>
+      <li><strong><%= item.title %>:</strong><%= link_to item.image_url, image_path(item.image_url), data: {turbolinks: false}%></li>
+      <%end%>
+</ul>
+
+<p>Pognon, pognon, pognon facile ! <br>
+Start up nation !</p>

@@ -1,5 +1,6 @@
 # README
 
+Nous avons eu un problème de déploiement, notre travail est plus représentatif en local, donc nous te serions reconnaissant de faire l'effort de le tester en local.
 L'application n'est pas entièrement fonctionnelle. Nous avons pris pas mal de retard car notre organisation n'était pas au point les premiers jours. Avec un peu plus de temps on aurait pu finir, mes les dernières mises au point se sont faites hier soir. En espérant que tu seras compréhensif ;)
 
 Pour voir en local le rendu de l'application fais:

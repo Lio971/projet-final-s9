@@ -4,7 +4,12 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-         def purchase_send 
+         has_one :cart
+         has_many :items
+         belongs_to :user, optional: true
+         has_many :orders
+
+         def purchase_send
         UserMailer.purchase_email(self).deliver_now
          end
 

@@ -3,6 +3,16 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 gem 'devise'
+gem 'redis'
+gem 'mailjet'
+gem 'devise'
+gem 'dotenv-rails'
+gem 'letter_opener'
+gem 'better_errors'
+gem 'pry'
+gem 'bcrypt'
+gem 'faker'
+
 gem 'table_print'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Bien le miaou ... bonjour !</h1>
+    <p>Tu viens d'effectuer une commande trop mignone sur The Cat Project en utilisant l'e-mail suivant : <%= @user.email %>.</p>
+    <br>
+
+    <p> Ta commande n° <%= @order.id %> est la suivante ;) </p>
+    <p>Tu as fondu devant ces photos trop choupinettes :</p>
+    
+    <!-- maybe to correct -->
+    <ul>
+      <% @items.each do |item| %>
+      <li><strong><%= item.title %>:</strong><%= link_to item.image_url, image_path(item.image_url), data: {turbolinks: false}%></li>
+      <%end%>
+    </ul>
+
+
+    <p>Nous ronronnons de plaisir à l'idée de te revoir <br>
+    A bientôt sur The Cat Project !!!</p>
+
+  </body>
+</html>

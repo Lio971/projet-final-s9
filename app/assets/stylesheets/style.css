@@ -18,7 +18,7 @@
 
 .size_cards {
   height: 20rem;
-  width: 50%;
+  width: 90%;
   margin: auto;
 }
 
@@ -36,4 +36,10 @@
 
 .border_form {
   border: 1px solid #C0C0C0;
+}
+
+.jumbotron {
+  background-image: url(chat1.jpg);
+ background-repeat: no-repeat;
+ width: auto;
 }

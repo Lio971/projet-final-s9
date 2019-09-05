@@ -1,0 +1,17 @@
+    Bien le miaou ... bonjour !
+    ===========================
+
+    Tu viens d'effectuer une commande trop mignone sur The Cat Project en utilisant l'e-mail suivant : <%= @user.email %>.
+    <br>
+
+    Ta commande n° <%= @order.id %> est la suivante ;)
+    Tu as fondu devant ces photos trop choupinettes :
+    
+    <!-- maybe to correct -->
+    
+      <% @items.each do |item| %>
+      <%= item.title %>:</strong><%= link_to item.image_url, image_path(item.image_url), data: {turbolinks: false}%>
+      <%end%>
+
+Nous ronronnons de plaisir à l'idée de te revoir
+    A bientôt sur The Cat Project !!!

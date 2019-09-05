@@ -1,4 +1,4 @@
 class Order < ApplicationRecord
-	has_many :items,through: carts
+	has_many :items ,through: :cart
 	belongs_to: user
 end

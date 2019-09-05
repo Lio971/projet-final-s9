@@ -5,7 +5,7 @@ class CreateCarts < ActiveRecord::Migration[5.2]
       t.integer  "quantity",   default: 1
       t.integer  "product_id"
       t.integer  "order_id"
-         validates :quantity, numericality { :equal_to: 1 }
+    
       t.timestamps
     end
   end

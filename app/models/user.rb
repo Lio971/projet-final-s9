@@ -3,4 +3,12 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+
+         def purchase_send 
+        UserMailer.purchase_email(self).deliver_now
+         end
+
+         def customer_purchase_send
+          AdminMailer.customer_purchase_email(self).deliver_now
+         end
 end
